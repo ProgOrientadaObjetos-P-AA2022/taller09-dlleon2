@@ -1,29 +1,30 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-package paquete4;
+package paquete5;
 
 import paquete2.InstitucionEducativa;
 import paquete2.Persona;
 import paquete2.Prestamo;
 /**
  *
- * @author LENOVO
+ * @author reroes
  */
-public class PrestamoEducativo {
+public class PrestamoEducativo extends Persona{
     private String nivelEstudio;
     private InstitucionEducativa centroEducativo;
     private double valorCarrera;
     private double valorMesCarrera;
-   
+
     public PrestamoEducativo(String nE, InstitucionEducativa cE, double vC, 
             Persona b, int t, String c){
         super(b,t,c);
         nivelEstudio = nE;
         centroEducativo = cE;
         valorCarrera = vC;
-}
+    }
 
     public void establecerNivelEstudio(String nE) {
         nivelEstudio = nE;
@@ -71,4 +72,5 @@ public class PrestamoEducativo {
         );
         return c;
     }
+    
 }
